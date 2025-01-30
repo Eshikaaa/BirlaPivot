@@ -27,7 +27,7 @@ import org.slf4j.Logger;
 |-------|------|
 | Application Image | Runs the Spring Boot application. |
 | Database Image | Runs PostgreSQL to store application data. |
-| Adminer Image (optional) | Provides a web-based UI for database management. |
+
 
 ## APIs Exposed
 ### 1. **Product APIs**
