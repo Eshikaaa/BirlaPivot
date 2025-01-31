@@ -20,7 +20,7 @@ services:
     depends_on:
       - postgres_con
     networks:
-      - mynetwork  # Use the existing 'mynetwork'
+      - mynetwork
 
   postgres_con:
     image: postgres:latest
@@ -32,10 +32,10 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - C:/postgres_container_data:/var/lib/postgresql/data  # Mapping the volume
+      - C:/postgres_container_data:/var/lib/postgresql/data
     networks:
-      - mynetwork  # Use the existing 'mynetwork'
+      - mynetwork
 
 networks:
   mynetwork:
-    external: true  # Marks the network as external, not managed by Docker Compose
+    external: true
